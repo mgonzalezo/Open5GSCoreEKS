@@ -280,7 +280,7 @@ Parameters:
   Attach2ndENILambdaS3Bucket:
     Type: String
     Description: Specify S3 Bucket(directory) where you locate Lambda function (Attach2ndENI function)
-    Default: ""
+    Default: "open5gscore2023"
   Attach2ndENILambdaS3Key:
     Type: String
     Description: Specify S3 Key(filename) of your Lambda Function (Attach2ndENI)
