@@ -40,9 +40,14 @@ echo -e "Installing multus daemonset\n"
 
 echo
 
-https://raw.githubusercontent.com/aws/amazon-vpc-cni-k8s/master/config/multus/v3.7.2-eksbuild.1/aws-k8s-multus.yaml
+# https://raw.githubusercontent.com/aws/amazon-vpc-cni-k8s/master/config/multus/v3.7.2-eksbuild.1/aws-k8s-multus.yaml
+
 
 cd ..
+
+echo -e "Creating the multus Deployment and RBAC \n"
+
+kubectl apply -f multus-preconfig/
 
 echo -e "Creating the multus network attachments\n"
 
